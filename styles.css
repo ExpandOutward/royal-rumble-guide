@@ -1,0 +1,337 @@
+/* Main Elements */
+html {
+ background-color: black;
+ height: 100%;
+ overflow: hidden;
+}
+
+body {
+  overflow: auto;
+  background-image: url('images/characterSelect.png');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+header {
+  color: rgb(219, 216, 0);
+  text-align: center;
+}
+
+strong, em {
+  color: yellow;
+}
+
+header > h1 {
+  margin-top: 0;
+  height: 50px;
+  font-size: 2.5em;
+  color: yellow;
+  text-shadow: 0 0 3px rgb(58, 0, 53), 0 0 5px rgb(199, 0, 199);
+}
+
+sup {
+  vertical-align: 0.5em;
+  color: yellow;
+}
+
+/* System Select Menu */
+/* Applies to Super Nintendo and Sega Genesis buttons */
+.selectSystemMenu {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.selectSystemMenu > button {
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(199, 0, 199)); 
+  font-weight: bold;
+  font-size: 1.2em;
+  color: yellow;
+}
+
+.selectSystemMenu > button:hover {
+  background-image: linear-gradient(rgb(199, 0, 199), rgb(58, 0, 53));
+}
+
+.selectSystemMenu > button:disabled {
+  color: gray;
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(97, 0, 97));
+}
+
+/* Options Menu */
+/* Applies to Move Guide, Match Guide, Tips and Tricks, and Settings buttons */
+.subMenu {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25px;
+}
+  
+.subMenu > button {
+  width: 100%;
+  font-weight: bold;
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(199, 0, 199)); 
+  color: yellow;
+}
+
+.subMenu > button:hover {
+  background-image: linear-gradient(rgb(199, 0, 199), rgb(58, 0, 53));
+  color: yellow;
+}
+
+.subMenu > button:disabled {
+  color: gray;
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(97, 0, 97));
+}
+
+.subMenu:disabled:hover {
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(97, 0, 97)); 
+}
+
+/* Flex Content */
+/* Applies to Move Guide, Match Guide, and Tips and Tricks components */
+.flexContent {
+  display: none;
+  color: white;
+  padding: 30px;
+}
+
+.flexContent > div {
+  border: 2px solid yellow;
+  background-image: url('images/charactercard.png');
+  background-size: cover;
+  background-position: center center;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexContent > div > h4 {
+  color: yellow;
+  text-align: center;
+}
+
+.flexContent > div > ul > li > strong {
+  color: yellow;
+  font-weight: bold;
+}
+
+.flexContent > div > div {
+  background-color: black;
+  border: 2px solid yellow;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 20px auto 0px auto;
+  width: 45%;
+}
+
+.buttonImg { 
+  width: 25px;
+  display: inline;
+  padding-right: 2px;
+}
+
+.inGame {
+  width: 80%;
+  border: 2px solid yellow;
+  margin: 5px auto 5px auto;
+  display: block;
+}
+
+/* Settings */
+/* Applies to Settings component */
+.settings {
+  color: white;
+  display: none;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+
+.settings > div {
+  border: 2px solid yellow;
+  background-image: url('images/charactercard.png');
+  background-size: cover;
+  background-position: center center;
+  padding: 10px;
+}
+
+.settings > div > h3, h4 {
+  color: yellow;
+  text-align: center;
+}
+
+.settings > div > ul > li > strong {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* Character Layout */
+/* Applies to character layouts for both Super Nintendo and Sega Genesis */
+.characterLayout {
+  display: flex;
+  flex-wrap: wrap;  
+  overflow: hidden;
+  padding: 0px 20px 20px 20px;
+  justify-content: center;
+}
+
+.characterLayout > div {
+  color: yellow;
+  border: 2px solid yellow;
+  gap: 50px;
+  margin: 20px 5px 0px 5px;
+  padding: 5px;
+  background-image: url('images/charactercard.png');
+  background-size: cover;
+  background-position: center center;
+  width: 200px;
+  overflow: hidden;
+}
+
+.characterLayout > div:hover {
+  border: 2px solid rgb(68, 0, 68);
+  background-image: url('images/altcharactercard.png');
+  background-size: cover;
+  background-position: center center;
+  color: black;
+}
+
+.characterLayout > div > img {
+  width: 90%;
+  display: block;
+  margin: 0px auto 10px auto;
+  overflow: hidden;
+}
+
+.characterLayout > div > h3 {
+  text-align: center;
+}
+
+#segaCharacters {
+  display: none;
+}
+
+ /* Wrestler Biography Area */
+ /* Applies to individual wrestler biographies */
+.bioContainer {
+  display: none;
+}
+
+.characterBio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+}
+
+.characterBio > div {
+  border: 3px solid yellow;
+  border-radius: 15px;
+  margin: 10px auto 10px auto;
+  background-image: url('images/charactercard.png');
+  background-size: cover;
+  background-position: center center;
+  font-size: 1.2em;
+  padding: 10px;
+  display: flex;
+  width: 850px;
+}
+
+.characterBio > div > div > h3 {
+  color: yellow;
+  text-align: center;
+}
+
+.characterBio > div > div > img {
+  width: 200px;
+  display: block;
+  margin: 0px auto 10px auto;
+}
+
+.sigArea {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  background-image: url('images/charactercard.png');
+  background-size: cover;
+  background-position: center center;  
+  border: 3px solid yellow;
+  border-radius: 15px;
+  width: 850px;
+  margin: 10px auto 10px auto;
+}
+
+.sigArea > div {
+  width: 45%;
+  margin: 0px auto 0px auto;
+  padding: 10px;
+  display: block;
+}
+
+.sigArea > div > h3 {
+  color: yellow;
+  text-align: center;
+}
+
+.sigGif {
+  border: 2px solid yellow;
+  border-radius: 5px;
+  display: block;
+  margin: 0px auto 5px auto;
+  width: 200px;
+}
+
+/* Toggle Buttons */
+/* Styles for buttons to indicate current component and respond to mouse over */
+.toggleButton {
+  width: 25%;
+  font-weight: bold;
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(199, 0, 199)); 
+  color: yellow;
+}
+
+.toggleButton:hover {
+  width: 25%;
+  font-weight: bold;
+  background-image: linear-gradient(rgb(199, 0, 199), rgb(58, 0, 53));
+  color: yellow;
+}
+
+.toggleButton:disabled {
+  color: gray;
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(97, 0, 97));
+}
+  
+.toggleButton:disabled:hover {
+  background-image: linear-gradient(rgb(58, 0, 53), rgb(97, 0, 97)); 
+}
+
+/* Media Queries */
+/* For Mobile */
+
+@media (max-width: 850px) {
+  .body {overflow-x: hidden; height: fit-content;}
+  header {font-size: .85em; height: 90px;}
+  .selectSystemMenu {flex-direction: column; width: 90%;}
+  .subMenu {flex-direction: column; width: 90%; margin-bottom: 50px;}
+  .characterLayout {overflow: auto; height: fit-content;}
+  .flexContent > div {flex-direction: column;}
+  .flexContent > div > div {width: 90%;}
+  .bioContainer {width: 98%; margin: 0 auto; padding-top: 20px;}
+  .characterBio > div  {width: 90%; display: flex; flex-direction: column; margin: 10px auto;}
+  .characterBio > div > div {margin: 0 auto;}
+  .sigArea {width: 90%;}
+  .sigArea > div {width: 100%;}
+}
+
+@media (max-width: 450px) {
+  header {font-size: .65em; height: 90px;}
+}

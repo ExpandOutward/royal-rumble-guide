@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWF Royal Rumble Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+  
+  <body>
+<!-- Header and Menu Area-->
+<!-- Button disabled based on current selection -->
+    <header>
+        <h1>WWF Royal Rumble Interactive Strategy Guide</h1>
+    </header>
+
+    <div class="selectSystemMenu">
+      <button class="systemButton" id="snesButton" onclick="showSNES()" disabled>Super Nintendo</button>
+      <button class="systemButton" id="segaButton" onclick="showSega()">Sega Genesis</button>
+    </div>
+
+    <div class="subMenu">
+      <button onClick = "showMoveGuide()" id="moveGuideButton">Move Guide</button>
+      <button onClick = "showMatchGuide()" id="matchGuideButton">Match Guide</button>
+      <button onClick = "showTipsTricks()" id="tipsTricksButton">Tips, Tricks and More</button>
+      <button onClick = "showSettings()" id="settingsButton">Settings</button>
+    </div>
+
+<!-- Move Guide -->
+<!-- Displays only when Move Guide button is clicked -->
+<!-- Displays basic moves which are universal for all wrestlers -->
+    <div class="flexContent" id="moveGuide">
+        <div>
+<!-- Button Guide (1st Div of 6) -->
+          <div>
+            <h4>Button Guide</h4>
+              <table>
+                <tr>
+                  <td>
+                    <img src="images/buttons/dpad-n.png" class="buttonImg" />
+                  </td>
+                  <td>Move Any Direction</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/dpad-ur.png" class="buttonImg" />
+                  </td>
+                  <td>Move Any Direction in Yellow</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                  </td>
+                  <td>Super Nintendo</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                  </td>
+                  <td>Sega Genesis (3 button)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" />
+                  </td>
+                  <td>Sega Genesis (6 button)</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                  </td>
+                  <td>Press Both Buttons Together</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                  </td>
+                  <td>"A" or "B" Button</td>
+                </tr>
+              </table>
+            </div>
+<!-- Basic Actions (2nd Div of 6) -->
+            <div> 
+              <h4>Basic Actions</h4>
+               <table>
+                 <tr>
+                   <td>
+                      <img src="images/buttons/dpad-n.png" class="buttonImg" />
+                    </td>
+                      <td>Move Around / Enter Ring</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/buttons/dpad-u.png" class="buttonImg" />
+                      </td>
+                      <td>Climb Turnbuckle <sup>b1</sup></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/buttons/dpad-d.png" class="buttonImg" />
+                      </td>
+                      <td>Climb Down From Turnbuckle <sup>b2</sup></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/buttons/dpad-ldr.png" class="buttonImg" />
+                        <img src="images/buttons/snes-y.png" class="buttonImg" />
+                        <br />
+                        <img src="images/buttons/dpad-ldr.png" class="buttonImg" />
+                        <img src="images/buttons/gen3-a.png" class="buttonImg" />
+                        <img src="images/buttons/gen6-a.png" class="buttonImg" />
+                      </td>
+                      <td>Exit Ring <sup>b3</sup></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/buttons/gen6-b.png" class="buttonImg" />
+                      </td>
+                      <td>Tag Partner <sup>b4</sup></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/buttons/snes-sel.png" class="buttonImg" />
+                        <img src="images/buttons/gen3-a.png" class="buttonImg" />
+                        <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                        <img src="images/buttons/gen6-mode.png" class="buttonImg" />
+                      </td>
+                      <td>Switch Tag Partner <sup>b5</sup></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/buttons/snes-x.png" class="buttonImg" />,
+                        <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                        <img src="images/buttons/gen3-c.png" class="buttonImg" />,
+                        <img src="images/buttons/gen6-y.png" class="buttonImg" />
+                      </td>
+                      <td>Pick Up / Drop Steel Chair <sup>b6</sup></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/buttons/snes-a.png" class="buttonImg" />,
+                        <img src="images/buttons/snes-b.png" class="buttonImg" />,
+                        <img src="images/buttons/snes-y.png" class="buttonImg" />
+                        <br />
+                        <img src="images/buttons/gen3-a.png" class="buttonImg" />,
+                        <img src="images/buttons/gen3-b.png" class="buttonImg" />,
+                        <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                        <br />
+                        <img src="images/buttons/gen6-a.png" class="buttonImg" />,
+                        <img src="images/buttons/gen6-b.png" class="buttonImg" />,
+                        <img src="images/buttons/gen6-c.png" class="buttonImg" />
+                        <img src="images/buttons/gen6-x.png" class="buttonImg" />,
+                        <img src="images/buttons/gen6-z.png" class="buttonImg" />                
+                      </td>
+                      <td>Swing Steel Chair <sup>b7</sup></td>
+                    </tr>
+                  </table>
+              </div>
+<!-- Player and Opponent Standing (3rd Div of 6)-->
+            <div> 
+              <h4>Player and Opponent Standing</h4>
+              <table>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" />
+                  </td>
+                  <td>Punch</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-c.png" class="buttonImg" />
+                  </td>
+                  <td>Kick</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-y.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-a.png" class="buttonImg" />
+                  </td>
+                  <td>Run</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-x.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-y.png" class="buttonImg" />
+                  </td>
+                  <td>Initiate Grapple</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-l.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-z.png" class="buttonImg" />
+                  </td>
+                  <td>Eye Gouge <sup>i1 i4</sup></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-r.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-x.png" class="buttonImg" />
+                  </td>
+                  <td>Choke <sup>i1 i2 i4</sup></td>
+                </tr>
+              </table>
+              <table>
+                <h4>Player Running</h4>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" />                    
+                  </td>
+                  <td>Drop Kick</td>
+                </tr>
+              </table>
+              <table>
+              <h4>Opponent Running Toward Player</h4>
+              <tr>
+                <td>
+                  <img src="images/buttons/snes-b.png" class="buttonImg" />
+                  <img src="images/buttons/gen3-b.png" class="buttonImg" /> 
+                  <img src="images/buttons/gen6-b.png" class="buttonImg" />                    
+                </td>
+                <td>Hip Toss <sup>i3</sup></td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/buttons/snes-x.png" class="buttonImg" />
+                  <img src="images/buttons/gen3-b.png" class="buttonImg" /> 
+                  <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                  <img src="images/buttons/gen6-y.png" class="buttonImg" />                    
+                </td>
+                <td>Clothesline</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/buttons/snes-a.png" class="buttonImg" />
+                  <img src="images/buttons/gen3-c.png" class="buttonImg" /> 
+                  <img src="images/buttons/gen6-c.png" class="buttonImg" />                    
+                </td>
+                <td>Drop Kick</td>
+              </tr>
+              </table>
+            </div>
+<!-- In A Grapple (4th Div of 6) -->
+            <div> 
+              <h4>In A Grapple <em>(Offense)</em></h4>
+              <table>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" />
+                  </td>
+                  <td>Body Slam</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-c.png" class="buttonImg" />
+                  </td>
+                  <td>Head Butt</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-y.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-a.png" class="buttonImg" />
+                  </td>
+                  <td>Irish Whip <sup>g1</sup></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-x.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-y.png" class="buttonImg" />
+                  </td>
+                  <td>Suplex</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-l.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-x.png" class="buttonImg" />
+                  </td>
+                  <td>Atomic Drop <sup>g1 g2 g4</sup></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-r.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-x.png" class="buttonImg" />
+                  </td>
+                  <td>Back Breaker / Signature <sup>g2 g3 g4</sup></td>
+                </tr>
+              </table>
+              <table>
+                <h4>In A Grapple <em>(Defense)</em></h4>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-c.png" class="buttonImg" />
+                  </td>
+                  <td>Break Out</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-x.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-y.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-l.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-r.png" class="buttonImg" />
+                    <br />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" />,
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <br />
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />,
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />,
+                    <img src="images/buttons/gen6-x.png" class="buttonImg" />,
+                    <img src="images/buttons/gen6-y.png" class="buttonImg" />,
+                    <img src="images/buttons/gen6-z.png" class="buttonImg" />
+                  </td>
+                  <td>Gain Control</td>
+                </tr>
+              </table>  
+            </div>
+<!-- Opponent On Ground (5th Div of 6)-->
+            <div>
+              <h4>Opponent On Ground <em>(Above)</em></h4>
+              <table>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-c.png" class="buttonImg" />
+                  </td>
+                  <td>Knee Drop</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" />
+                  </td>
+                  <td>Body Splash</td>
+                </tr>
+              </table>
+              <h4>Opponent On Ground <em>(Below)</em></h4>
+              <table>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-c.png" class="buttonImg" />
+                  </td>
+                  <td>Stomp</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" />
+                  </td>
+                  <td>Elbow Drop</td>
+                </tr>
+              </table>
+              <table>
+                <h4>Opponent On Ground <em>(Running)</em></h4>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" />
+                  </td>
+                  <td>Running Elbow Drop</td>
+                </tr>
+              </table>
+              <table>
+                <h4>Opponent On Ground <em>On Top Rope</em></h4>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-a.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-b.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-x.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-y.png" class="buttonImg" />
+                    <br />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" />,
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />, 
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" />
+                    <br />
+                    <img src="images/buttons/gen6-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-b.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen6-c.png" class="buttonImg" />
+                    <img src="images/buttons/gen6-y.png" class="buttonImg" />
+                  </td>
+                  <td>Flying Elbow Drop <sup>d1 d2</sup></td>
+                </tr>
+              </table>
+              <table>
+                <h4>Opponent On Ground <em>(Near Head)</em></h4>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-x.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen6-y.png" class="buttonImg" />
+                  </td>
+                  <td>Pick Up and Grapple</td>
+                </tr>
+              </table>
+              <table>
+                <h4>Opponent On Ground <em>(Near Chest)</em></h4>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-x.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-c.png" class="buttonImg" /> 
+                    <img src="images/buttons/gen6-y.png" class="buttonImg" />
+                  </td>
+                  <td>Pin</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="images/buttons/snes-l.png" class="buttonImg" />,
+                    <img src="images/buttons/snes-r.png" class="buttonImg" />
+                    <br />
+                    <img src="images/buttons/gen3-a.png" class="buttonImg" />
+                    <img src="images/buttons/gen3-b.png" class="buttonImg" />
+                    <br /> 
+                    <img src="images/buttons/gen6-x.png" class="buttonImg" />,
+                    <img src="images/buttons/gen6-z.png" class="buttonImg" />
+                  </td>
+                  <td>Cancel Pin <sup>d3</sup></td>
+                </tr>
+              </table>
+            </div>
+<!-- Annotations (6th Div of 6) -->
+            <div>
+              <table>
+                <h4>Basic Action Annotations</h4>
+                <tr>
+                  <td>
+                    <sup>b1</sup> Must be near an upper turnbuckle. 
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>b2</sup> Must be standing on the top turnbuckle. 
+                  </td>
+                </tr>
+                  <td>
+                    <sup>b3</sup> Press the necessary button while walking toward the left, right, or bottom ropes.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>b4</sup> Must be near your tag partner.
+                  </td>
+                <tr>
+                </tr>
+                  <td>
+                    <sup>b5</sup> Must be in a Triple Tag Team match.
+                  </td>
+                  <tr>
+                  </tr>
+                  <td>
+                    <sup>b6</sup> Must be near chair. If you drop the chair on the floor, it cannot be picked up again
+                  </td>
+                  <tr>
+                  </tr>
+                  <td>
+                    <sup>b7</sup> Must be holding chair. Chair can only be used once.
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <h4>Standing Annotations</h4>
+                <tr>
+                  <td>
+                    <sup>i1</sup> Must be done outside ring, while the ref is down, or in no DQ matches.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>i2</sup> Stuns opponents if their health is low.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>i3</sup> Can be used to throw opponents over the top rope if you're standing close to the ropes.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>i4</sup> Eye Gouge / Choke executes at random on 3 Button Sega Genesis Controllers.
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <h4>Grapple Annotations</h4>
+                <tr>
+                  <td>
+                    <sup>g1</sup> Can be used to throw opponents over the top rope if you're standing close to the ropes.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>g2</sup> Stuns opponents if their health is low.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>g3</sup> Must be pinning opponent.
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <h4>Grapple Annotations</h4>
+                <tr>
+                  <td>
+                    <sup>d1</sup> Must be on the top rope.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>d2</sup> Can jump from top rope to outside of ring.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>d3</sup> Executes finisher if the opponent's health is low.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <sup>d4</sup> Atomic Drop / Back Breaker executes at random on 3 Button Sega Genesis Controllers.
+                  </td>
+                </tr>
+              </table>
+            </div>
+        </div>
+    </div>
+
+<!-- Match Guide -->
+<!-- Displays only when Match Guide button is clicked -->
+<!-- Contains information regarding win conditions and each available match in the game -->
+<div class="flexContent" id="matchGuide">
+    <div>
+<!-- Win Conditions (Div 1 of 5) -->
+      <div>
+        <h4>Win Conditions</h4>
+        <p>Different match types will have different win conditions.</p>
+        <p><strong>Pinfall:</strong> Cover your opponent while the ref counts to 3.</p>
+        <p><strong>Knockout:</strong> Drain your opponents health bar.</p>
+        <p><strong>Count Out:</strong> Keep your opponent outside of the ring while the ref counts to 10</p>
+        <p><strong>Elimination:</strong> Throw your opponent out of the ring.</p>
+        <img src="images/ingame/3count.png" class="inGame" />
+      </div>
+<!-- One-on-One (Div 2 of 5) -->
+      <div>
+        <h4>One-on-One</h4>
+        <p><strong>One Fall:</strong> A standard 1 on 1 match. Win via pinfall or count out.</p>
+        <p><strong>Brawl:</strong> A no disqualification match. Win via knockout.</p>
+        <p><strong>Tournament:</strong> A 1-on-1, Eleven round tournament for the WWF Championship.</p>
+        <img src="images/ingame/championshipwin.png" class="inGame" />
+      </div>
+<!-- Tag Team (Div 3 of 5)-->
+      <div>
+        <h4>Tag Team</h4>
+        <p><strong>One Fall:</strong> A standard tag match. Win via pinfall or count out.</p>
+        <p><strong>Brawl:</strong> A no disqualification tag match. Win via knockout.</p>
+        <p><strong>Tournament:</strong> A tag team, 5 round tournament for the WWF Tag Team Championship.</p>
+        <img src="images/ingame/tag.png" class="inGame" />
+      </div>
+<!-- Triple Tag Team (Div 4 of 5) -->
+      <div>
+        <h4>Triple Tag Team</h4>
+        <p><strong>One Fall:</strong> A standard 3-on-3 tag match. Win via pinfall or count out.</p>
+        <p><strong>Brawl:</strong> A no disqualification 3-on-3 tag match. Win via knockout.</p>
+        <img src="images/ingame/3on3.png" class="inGame" />
+      </div>
+<!-- Royal Rumble (Div 5 of 5) -->
+      <div>
+        <h4>Royal Rumble</h4>
+        <p>A 12 man over-the-top Battle Royal. The match starts with 2 participants. A new participant enters until 
+          the ring has 6 total participants. A new participant enters each time a wrestler is eliminated until all
+          only one participant remains in the ring.
+        </p>
+        <img src="images/ingame/rumbleresults.png" class="inGame" id="tbTrick"/>
+      </div>
+    </div>
+  </div>
+
+<!-- Tips and Tricks -->
+<!-- Displays only when Tips and Tricks button is clicked -->
+<!-- Contains information to help users increase thier in-game performance -->
+<div class="flexContent" id="tipsTricks">
+  <div>
+<!-- Striking Logic (Div 1 of 5) -->
+    <div>
+      <h4>Striking Logic</h4>
+      <ul>
+        <li>Deliver 3 consecutive strikes to knock your opponent down <em>(4 kicks on Sega Genesis).</em></li>
+        <li>If your opponent strikes back and inerrupts your striking, deliver 2 consecutive strikes to knock your opponent down.</li>
+        <li>If your opponent's health is in the red, the last strike will daze your opponent instead of knocking them down.</li>
+        <li>If your opponent's health is empty, 1 strike will knock them down.</li>
+      </ul>
+    </div>
+<!-- Combinations (Div 2 of 5) -->
+    <div>
+      <h4>Combinations</h4>
+      <p>There is no official combination system in WWF Royal Rumble. However, you can chain moves together based on distance and positioning.</p>
+      <p><strong>Example:</strong> Atomic Drop into a Running Drop Kick</p>
+      <p><strong>Example:</strong> Body Splash into a Running Elbow Drop</p>
+    </div>
+<!-- Top Rope Shenanigans (Div 3 of 5) -->
+    <div> 
+      <h4>Top Rope Shenanigans</h4>
+      <p>If your opponent is on the top rope, you can knock them off by runnign at the turnbuckle.
+        If you're playing against the CPU, they will automatically position themselves for this counter.
+        Jumping at the right time will result in the CPU opponent crashing into the turnbuckle before
+        executing the Elbow Drop.
+        <img src="images/ingame/turnbuckletrick.gif" class="inGame" />
+      </p>
+    </div>
+<!-- Tag Team Strategy (Div 4 of 5) -->
+    <div>
+      <h4>Tag Team Strategy</h4>
+      <p><strong>Cut off the Ring:</strong> When your opponent is in trouble, they will immediately go to 
+        their corner to tag their partner. Standing between your opponent and his partner will allow you 
+        to cut them off before they can make the tag.
+      </p>
+      <p><strong>Interference:</strong> The non-legal participant will interfere in the following scenarios:
+      <ul>
+        <li>During a pinfall, the partner of the participant being pinned will attempt to break up the pin unless
+          the participant's health is completely empty.</li>
+        <li>The non-legal participant will get involved if the fight ends up on the outside of the ring</li>
+        <li>If you stand too close to the non-legal participant while they are on the apron, they will execute a
+          sleeper hold capable of initiating a stunned status.</li>  
+      </ul>
+      <img src="images/ingame/tagcheat.png" class="inGame" />
+      </p>
+    </div>
+<!-- Royal Rumble (Div 5 or 5) -->
+    <div>
+      <h4>Royal Rumble Strategy</h4>
+      <p>There are 4 different ways to eliminate an opponent from the Royal Rumble</p>
+      <p><strong>Rebound Hip Toss:</strong> This is the fastest and easiest way to eliminate an opponent as 
+        the opponent's health is not considered. Irish whip your opponent and get close to the ropes to execute
+        the hip toss and eliminate your opponent. With this in mind, it's important to use caution when running 
+        toward your opponent as you may run into a hip toss.
+      </p>
+      <img src="images/ingame/rumble-easy.gif" class="inGame" />
+      <p><strong>Knock Opponent off of Top Rope:</strong> You can knock your opponent off of the top rope
+        to the outside, though this will have to be timed perfectly. Use caution when climbing the turnbuckle in a 
+        Rumble match to avoid elimination.
+      </p>
+      <p><strong>Standing Hip Toss / Atomic Drop:</strong> When an opponent is worn down enough for elimination, the grapple indicator 
+        will begin flashing. If your back is to the nearest rope, execute a Hip Toss to eliminate your opponent. If 
+        your opponent's back is facing the rope and you are close, execute an Atomic Drop to eliminate your opponent. 
+        If your health is low, it's wise to stay close to the center of the ring and avoid losing grapples when near the ropes.
+      </p>
+      <img src="images/ingame/rumble-health.gif" class="inGame" />
+    </div>
+  </div>
+</div>
+
+<!-- Settings -->
+<!-- Displays only when Settings button is clicked -->
+<!-- Contains application settings, specifically regarding to in-app music -->
+<div class="settings" id="settings">
+  <div>
+    <h3>Settings</h3>
+    <p><strong>Menu Music: </strong>
+      <button class="toggleButton" id="menuMusicOn" onClick="enableMenuMusic()">On</button>
+      <button class="toggleButton" id="menuMusicOff" onClick="disableMenuMusic()" disabled>Off</button>
+    </p>
+    <p><strong>Entrance Music: </strong>
+      <button class="toggleButton" id="entranceMusicOn" onClick="enableEntranceMusic()">On</button>
+      <button class="toggleButton" id="entranceMusicOff" onClick="disableEntranceMusic()" disabled>Off</button>
+    </p>
+    <p><strong>Master Volume: </strong>
+       <input type="range" min="0" max ="1" value="1" step="0.1" id="masterVolume" />
+    </p>
+  </div>
+</div>
+
+<!-- Wrestler Roster (Super Nintendo) -->
+    <div class="characterLayout" id="snesCharacters">
+<!-- Macho Man Randy Savage (Super Nintendo) -->
+      <div onClick="showMacho1()">
+        <h3>Randy Savage</h3>
+        <img src="images/snes/macho.png">
+      </div>
+<!-- Mr. Perfect (Super Nintendo) -->
+      <div onClick="showPerfect1()">
+        <h3>Mr. Perfect</h3>
+        <img src="images/snes/perfect.png">
+      </div>
+<!-- The Undertaker (Super Nintendo) -->
+      <div onClick="showTaker1()">
+        <h3>The Undertaker</h3>
+        <img src="images/snes/taker.png">
+      </div>
+<!-- Bret Hitman Hart (Super Nintendo) -->
+      <div onClick="showHart1()">
+        <h3>Bret Hart</h3>
+        <img src="images/snes/hitman.png">
+      </div>
+<!-- Tatanka (Super Nintendo) -->
+      <div onClick="showTatanka1()">
+        <h3>Tatanka</h3>
+        <img src="images/snes/tatanka.png">
+      </div>
+<!-- Crush (Super Nintendo) -->
+      <div onClick="showCrush1()">
+        <h3>Crush</h3>
+        <img src="images/snes/crush.png">
+      </div>
+<!-- Nature Boy Ric Flair (Super Nintendo) -->
+      <div onClick="showFlair1()">
+        <h3>Ric Flair</h3>
+        <img src="images/snes/natureboy.png">
+      </div>
+<!-- HBK Shawn Michaels (Super Nintendo) -->
+      <div onClick="showHBK1()"> 
+        <h3>Shawn Michaels</h3>
+        <img src="images/snes/hbk.png">
+      </div>
+<!-- Bad Guy Razor Ramon (Super Nintendo) -->
+      <div onClick="showRazor1()">
+        <h3>Razor Ramon</h3>
+        <img src="images/snes/badguy.png">
+      </div>
+<!-- Yokozuna (Super Nintendo) -->
+      <div onClick="showYoko1()">
+        <h3>Yokozuna</h3>
+        <img src="images/snes/yokozuna.png">
+      </div>
+<!-- Narcissist Lex Luger (Super Nintendo) -->
+      <div onClick="showLuger1()">
+        <h3>The Narcissist</h3>
+        <img src="images/snes/luger.png">
+      </div>
+<!-- Wrestler Roster (Super Nintendo) -->
+      <div onClick="showDiBiase1()">
+        <h3>Ted DiBiase</h3>
+        <img src="images/snes/dibiase.png">
+      </div>
+    </div>
+
+<!-- Wrestler Roster (Sega Genesis) -->  
+    <div class="characterLayout" id="segaCharacters">
+<!-- Macho Man Randy Savage (Sega Genesis) -->  
+        <div onClick="showMacho2()">
+          <h3>Randy Savage</h3>
+          <img src="images/sega/savage.png">
+        </div>
+<!-- Bret Hitman Hart (Sega Genesis) -->  
+        <div onClick="showHart2()">
+          <h3>Bret Hart</h3>
+          <img src="images/sega/hart.png">
+        </div>
+<!-- Immortal Hulk Hogan (Sega Genesis) -->  
+        <div onClick="showHogan2()">
+          <h3>Hulk Hogan</h3>
+          <img src="images/sega/hogan.png">
+        </div>
+<!-- The Undertaker (Sega Genesis) -->  
+        <div onClick="showTaker2()">
+          <h3>The Undertaker</h3>
+          <img src="images/sega/taker.png">
+        </div>
+<!-- Crush (Sega Genesis) -->  
+        <div onClick="showCrush2()">
+          <h3>Crush</h3>
+          <img src="images/sega/crush.png">
+        </div>
+<!-- Hacksaw Jim Duggan (Sega Genesis) -->  
+        <div onClick="showDuggan2()">
+          <h3>Jim Duggan</h3>
+          <img src="images/sega/hacksaw.png">
+        </div>
+<!-- Narcissist Lex Luger (Sega Genesis) -->  
+        <div onClick="showLuger2()">
+          <h3>The Narcissist</h3>
+          <img src="images/sega/luger.png">
+        </div>
+<!-- HBK Shawn Michaels (Sega Genesis) -->  
+        <div onClick="showHBK2()">
+          <h3>Shawn Micahels</h3>
+          <img src="images/sega/hbk.png">
+        </div>
+<!-- Model Rick Martel (Sega Genesis) -->  
+        <div onClick="showMartel2()">
+          <h3>Rick Martel</h3>
+          <img src="images/sega/martel.png">
+        </div>
+<!-- Papa Shango (Sega Genesis) -->  
+        <div onClick="showShango2()">
+          <h3>Papa Shango</h3>
+          <img src="images/sega/shango.png">
+        </div>
+<!-- Bad Guy Razor Ramon (Sega Genesis) -->  
+        <div onClick="showRazor2()">
+          <h3>Razor Ramon</h3>
+          <img src="images/sega/razor.png">
+        </div>
+<!-- IRS Irwin R. Sheister (Sega Genesis) -->  
+        <div onClick="showIRS2()">
+          <h3>IRS</h3>
+          <img src="images/sega/irs.png">
+        </div>
+      </div>
+
+<!-- Character Biographies / Moves -->
+<!-- Displays when specific characters are selected -->
+<!-- Displays wrestler biography and signature move details -->
+<!-- Character Name and Photo (Div 1 of 2) -->
+      <div class="bioContainer" id="bioContainer">
+        <div class="characterBio" id="characterBio">
+          <div>
+            <div>
+              <h3 id="name"></h3>
+              <img src="" id="photo">
+            </div>
+            <div>
+              <h3>Biography</h3>
+              <p id="stats"></p>
+          </div>
+        </div>
+<!-- Signature Move (Div 2 of 2) -->
+        <div class="sigArea">
+          <div>
+            <h3>Signature Move</h3>
+            <p id="signature"></p>
+          </div>
+          <div style="text-align: center;">
+            <img class="sigGif" id="sigGif">
+            <button onClick="playSig()" id="sigPlay" class="toggleButton">Play</button>
+            <button onClick="stopSig()" id="sigStop" class="toggleButton" disabled>Stop</button>
+          </div>  
+        </div>
+    </div>
+
+  </div>
+<!-- Audio Files -->
+<!-- Menu Theme -->
+  <audio id="snesMenuTheme">
+    <source src="audio/snes/snesMain.mp3">
+  </audio>
+<!-- Super Nintendo Entrance Themes -->
+  <audio id="snesMachoTheme">
+    <source src="audio/snes/macho.mp3">
+  </audio>
+  <audio id="snesPerfectTheme">
+    <source src="audio/snes/perfect.mp3">
+  </audio>
+  <audio id="snesTakerTheme">
+    <source src="audio/snes/taker.mp3">
+  </audio>
+  <audio id="snesHartTheme">
+    <source src="audio/snes/hart.mp3">
+  </audio>
+  <audio id="snesTatankaTheme">
+    <source src="audio/snes/tatanka.mp3">
+  </audio>
+  <audio id="snesCrushTheme">
+    <source src="audio/snes/crush.mp3">
+  </audio>
+  <audio id="snesFlairTheme">
+    <source src="audio/snes/flair.mp3">
+  </audio>
+  <audio id="snesHBKTheme">
+    <source src="audio/snes/hbk.mp3">
+  </audio>
+  <audio id="snesRamonTheme">
+    <source src="audio/snes/ramon.mp3">
+  </audio>
+  <audio id="snesYokoTheme">
+    <source src="audio/snes/yoko.mp3">
+  </audio>
+  <audio id="snesLugerTheme">
+    <source src="audio/snes/luger.mp3">
+  </audio>
+  <audio id="snesDiBiaseTheme">
+    <source src="audio/snes/dibiase.mp3">
+  </audio>
+<!-- Sega Genesis Entrance Themes -->
+  <audio id="segaMachoTheme">
+    <source src="audio/sega/macho.mp3">
+  </audio>
+  <audio id="segaHartTheme">
+    <source src="audio/sega/hart.mp3">
+  </audio>
+  <audio id="segaHoganTheme">
+    <source src="audio/sega/hogan.mp3">
+  </audio>
+  <audio id="segaTakerTheme">
+    <source src="audio/sega/taker.mp3">
+  </audio>
+  <audio id="segaCrushTheme">
+    <source src="audio/sega/crush.mp3">
+  </audio>
+  <audio id="segaDugganTheme">
+    <source src="audio/sega/duggan.mp3">
+  </audio>
+  <audio id="segaLugerTheme">
+    <source src="audio/sega/luger.mp3">
+  </audio>
+  <audio id="segaHBKTheme">
+    <source src="audio/sega/hbk.mp3">
+  </audio>
+  <audio id="segaMartelTheme">
+    <source src="audio/sega/martel.mp3">
+  </audio>
+  <audio id="segaShangoTheme">
+    <source src="audio/sega/shango.mp3">
+  </audio>
+  <audio id="segaRamonTheme">
+    <source src="audio/sega/ramon.mp3">
+  </audio>
+  <audio id="segaIRSTheme">
+    <source src="audio/sega/irs.mp3">
+  </audio>
+
+<!-- Scripts -->
+
+    <script src="scripts.js"></script>
+
+  </body>
+
+</html>
