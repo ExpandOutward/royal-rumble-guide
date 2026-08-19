@@ -17,20 +17,67 @@ body {
 }
 
 header {
-  color: rgb(219, 216, 0);
+  box-sizing: border-box;
+  width: 90%;
+  margin: 16px auto 10px auto;
+  background-image:
+    linear-gradient(180deg, rgba(10, 0, 14, 0.92), rgba(28, 0, 36, 0.9)),
+    url('images/charactercard.png');
+  background-size: auto, 250px;
+  border: 2px solid yellow;
+  box-shadow:
+    0 0 0 1px rgb(58, 0, 53),
+    0 10px 28px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 180, 0.22);
+  padding: 14px 24px 16px 24px;
   text-align: center;
+}
+
+.headerBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.headerMark {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+header > .headerBrand > h1 {
+  margin: 0;
+  text-align: left;
+  color: rgb(255, 232, 74);
+  text-shadow:
+    0 1px 0 rgb(58, 0, 53),
+    0 0 12px rgba(199, 0, 199, 0.4);
+}
+
+.headerTitle {
+  display: block;
+  font-family: "Oswald", "Arial Narrow", Impact, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.7rem, 4vw, 2.7rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.headerSubtitle {
+  display: block;
+  margin-top: 6px;
+  font-family: "Oswald", "Arial Narrow", Impact, sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.85rem, 1.8vw, 1.15rem);
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: rgb(240, 216, 74);
 }
 
 strong, em {
   color: yellow;
-}
-
-header > h1 {
-  margin-top: 0;
-  height: 50px;
-  font-size: 2.5em;
-  color: yellow;
-  text-shadow: 0 0 3px rgb(58, 0, 53), 0 0 5px rgb(199, 0, 199);
 }
 
 sup {
@@ -319,7 +366,9 @@ sup {
 
 @media (max-width: 850px) {
   .body {overflow-x: hidden; height: fit-content;}
-  header {font-size: .85em; height: 90px;}
+  header {padding: 12px 14px 14px 14px;}
+  .headerBrand {gap: 10px;}
+  .headerSubtitle {letter-spacing: 0.18em;}
   .selectSystemMenu {flex-direction: column; width: 90%;}
   .subMenu {flex-direction: column; width: 90%; margin-bottom: 50px;}
   .characterLayout {overflow: auto; height: fit-content;}
@@ -333,5 +382,7 @@ sup {
 }
 
 @media (max-width: 450px) {
-  header {font-size: .65em; height: 90px;}
+  header {padding: 10px 10px 12px 10px;}
+  .headerMark {width: 36px; height: 36px;}
+  .headerSubtitle {letter-spacing: 0.12em;}
 }
