@@ -41,8 +41,8 @@ header {
 }
 
 .headerMark {
-  width: 48px;
-  height: 48px;
+  height: 100px;
+  width: 120px;
   flex-shrink: 0;
 }
 
